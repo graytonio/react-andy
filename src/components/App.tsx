@@ -26,7 +26,7 @@ function App() {
   };
 
   return (
-    <div className="container sm:mx-auto bg-background grid gap-2 px-4 sm:px-0">
+    <div className="container sm:mx-auto bg-background grid gap-2 px-4 sm:px-0 pt-4">
       <div className="text-4xl font-bold font-body grid grid-cols-3">
         <div className="text-primary sm:col-span-1 col-span-3 sm:text-left text-center py-2">
           <a href="/">React Andy</a>

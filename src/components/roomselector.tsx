@@ -34,7 +34,7 @@ export default function RoomSelector({ onConfigUpdate }: RoomSelectorProps) {
 
   if (state === "init")
     return (
-      <div className="grid grid-cols-2 col-span-3 sm:col-span-1 gap-2">
+      <div className="grid grid-cols-2 col-span-3 sm:col-span-2 gap-2">
         <button type="button" className="bg-primary text-white px-2 py-1 font-body font-bold text-2xl rounded-lg col-span-2" onClick={handleHosting}>
           Host
         </button>
