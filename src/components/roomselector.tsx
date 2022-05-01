@@ -29,6 +29,16 @@ export default function RoomSelector({ onConfigUpdate }: RoomSelectorProps) {
   };
 
   useEffect(() => {
+    const queryParams = new URLSearchParams(window.location.search);
+    const room = queryParams.get("room");
+
+    if (room) {
+      setRoomCode(room);
+      setState("watching");
+    }
+  }, []);
+
+  useEffect(() => {
     onConfigUpdate(roomCode, state);
   }, [roomCode, state]);
 
